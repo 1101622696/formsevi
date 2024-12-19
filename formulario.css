@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&family=Lato:wght@400;700&display=swap');
+
+:root { 
+	--root-background-colorprincipal: #003144;
+	--root-background-colorsecundario: #ffffff;
+	--root-background-colorterciario: #233D58;
+	--root-background-colorcuarto: #3D73A7;
+
+  --root-border-colorprincipal: #003144;
+	--root-border-colorsecundario: #3D73A7;
+
+  --font-primary: 'Roboto', sans-serif;
+
+  --font-size-medium: 14px;
+  --font-size-large: 24px;
+  --font-size-small: 12px;
+}
+
+
+.container{
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    height:94vh;
+    max-height:100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+} 
+.encabezado{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    top:5%;
+    width:80%;
+    height:auto;
+    border-radius: 10px;
+    padding: 7px;
+    position: absolute;
+    background-color: var(--root-background-colorprincipal);
+}
+.contenedor{
+    box-shadow: 0px 2px 3px rgb(56, 56, 56); 
+    border: 1px solid rgb(172, 164, 164);
+display:flex;
+margin-top:5%;
+height:95%;
+background-color: var(--root-background-colorsecundario);
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+}
+.formulario{
+    margin-top:29%;
+    width:100%;
+    height: auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#promesaForm{
+    width:100%;
+    height:90%;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+    box-sizing: border-box;
+    /* box-shadow: 0px 2px 3px rgb(56, 56, 56);  */
+
+}
+h3{
+    font-size: var(--font-size-large);
+}
+.mb-3 label{
+    font-size: var(--font-size-medium);
+    width:95%;
+}
+
+.textarea{
+    width:90%;
+    height:15%;
+    margin-top:2%;
+}
+
+.mb-3 textarea{
+    width:100%;
+    border:1px solid white;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.mb-3 input{
+    width:90%;
+    outline: none;
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border:1px solid white;
+    border-bottom: 1px solid black;
+}
+
+canvas{
+    border:2px solid rgb(189, 189, 189);
+    width:100%;
+    height:65%;
+    border: 1px solid black;
+
+}
+#cuadrofirma{
+    height:25%;
+    margin-top:3%;
+    display:grid;
+    width:90%;
+    box-sizing: border-box;
+}
+.mb-3 input:valid,
+.mb-3 select:valid {
+    
+  background-color: var(--root-background-colorsecundario);
+}
+.mb-3 input:focus,
+.mb-3 select:focus,
+.mb-3 textarea:focus {
+    outline: none;
+  border:1px solid white;
+  border-bottom: 1px solid black;
+  box-shadow: 0 2px 3px rgb(75, 74, 74); 
+  border: none; 
+  background-color: var(--root-background-colorsecundario)
+}
+
+input:-webkit-autofill {
+    outline: none;
+  background-color: var(--root-background-colorsecundario) !important;
+  box-shadow: 0 0 0px 1000px var(--root-background-colorsecundario) inset !important;
+  -webkit-text-fill-color: black !important;
+}
+
+.botones{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:4%;
+    width:60%;
+    height:9%;
+    margin: 2% auto 0 auto;
+
+}
+.button, .button2{
+    color:black;
+    width:100%;
+    height:auto;
+    padding: 2%;
+    font-size: var(--font-size-medium);
+    font-family:var(--font-primary);
+    border-radius: 7px;
+    text-decoration: none;
+    /* box-shadow: 0 2px 3px rgb(75, 74, 74);  */
+    background-color: var(--root-background-colorcuarto); 
+    border:none;
+    outline:none
+}
+
+.button:hover, .button2:hover{
+    background-color: var(--root-background-colorterciario);
+    color:white;
+    outline: white;
+    border:white
+    }
+
+    .todo{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .body{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        /* background-color: var(--root-background-colorcuarto); */
+        /* background:url('https://lirp.cdn-website.com/f9e0297f/dms3rep/multi/opt/favicones-web-1920w.png')no-repeat center; */
+        /* background-size: contain; */
+      }
+      section{
+      position: relative;
+      max-width: 600px;
+      background-color: transparent;
+      border:2px solid rgb(255,255,255,0.5);
+      display: flex;
+      min-height: 100vh;
+
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 3rem;
+      /* border:1px solid black; */
+
+      }
+      
+      @media
+(410px <= width <= 530px){
+    .container{
+    /* background-color:blue; */
+    height:90vh;
+    width:800px;
+    /* border: 1px solid black; */
+    
+}
+
+section{
+    max-width: 900px;
+    padding:0;
+  }
+
+  .formulario{
+    margin-left:2%;
+    margin-top:30%;
+    /* border: 1px solid black; */
+margin-bottom:4%;
+  }
+
+  #cuadrofirma{
+    height:25%;
+    margin-top:8%;
+  }
+
+.encabezado{
+width:70%;
+top:8%;
+}
+}
+
+@media
+(300px <= width <= 410px){
+    .container{
+    height:90vh;
+    max-width: 800px;
+  }
+
+  section{
+    max-width: 900px;
+    /* border:1px solid black; */
+    padding:0;
+  }
+
+  .formulario{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top:50%;
+  }
+
+  #cuadrofirma{
+    height:25%;
+    margin-top:15%;
+  }
+
+.encabezado{
+width:70%;
+top:8%;
+}
+}
